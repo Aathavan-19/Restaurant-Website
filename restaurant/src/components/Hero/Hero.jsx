@@ -1,11 +1,21 @@
 import React from 'react'
 import HeroImg from '../../assets/hero.png'
-import PrimaryButton from '../Shared/PrimaryButton'
+import HeroBg from '../../assets/heroBg.png'
+import PrimaryButton from '../Shared/PrimaryButton';
+
+const BgStyle = {
+    backgroundImage : `url(${HeroBg})`,
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center",
+    backgroundSize: "cover",
+    width:"100%",
+    height:"100%",
+};
 
 const Hero = () => {
   return (
     <>
-        <div className='relative z-[-1]'>
+        <div style={BgStyle} className='relative z-[-1]'>
             <div className='container py-16 sm:py-0'>
                 <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 place-items-center min-h-[600px]'>
                     {/* text-content-section */}
@@ -20,7 +30,7 @@ const Hero = () => {
 
                             {/* button section */}
                             <div>
-                                <PrimaryButton/>
+                                <PrimaryButton></PrimaryButton>
                             </div>
 
                         </div>
