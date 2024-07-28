@@ -17,13 +17,15 @@
 
 // export default App
 import React from 'react'
-import Navbar from './assets/components/Navbar'
-import Hero from './assets/components/Hero/Hero'
+import Navbar from './components/Navbar'
+import Hero from './components/Hero/Hero'
 const App = () => {
   return (
     <>
-      <Navbar/>
-      <Hero/>
+      <div className='overflow-x-hidden'>
+        <Navbar/>
+        <Hero/>
+      </div>
     </>
   )
 }
