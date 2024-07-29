@@ -1,9 +1,11 @@
 
 import React from 'react'
-import Navbar from './components/Navbar'
+import Navbar from './components/Navbar/Navbar'
 import Hero from './components/Hero/Hero'
 import Banner from './components/Banner/Banner'
 import WhyChoose from './components/WhyChoose/WhyChoose'
+import About from './components/About/About'
+import Footer from './components/Footer/Footer'
 
 
 const App = () => {
@@ -14,6 +16,8 @@ const App = () => {
         <Hero/>
         <Banner/>
         <WhyChoose/>
+        <About/>
+        <Footer/>
     </>
   )
 }
